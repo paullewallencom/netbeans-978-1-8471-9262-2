@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="MailResponder" targetNamespace="http://j2ee.netbeans.org/wsdl/MailResponder"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://j2ee.netbeans.org/wsdl/MailResponder" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:smtp="http://schemas.sun.com/jbi/wsdl-extensions/smtp/">
+    <types/>
+    <message name="MailResponderOperationRequest">
+        <part name="bodyPart" type="xsd:string"/>
+        <part name="fromPart" type="xsd:string"/>
+        <part name="subjectPart" type="xsd:string"/>
+    </message>
+    <portType name="MailResponderPortType">
+        <operation name="MailResponderOperation">
+            <input name="input1" message="tns:MailResponderOperationRequest"/>
+        </operation>
+    </portType>
+    <binding name="MailResponderBinding" type="tns:MailResponderPortType">
+        <smtp:binding/>
+        <operation name="MailResponderOperation">
+            <smtp:operation/>
+            <input name="input1">
+                <smtp:input message="bodyPart" subject="subjectPart" from="fromPart"/>
+            </input>
+        </operation>
+    </binding>
+    <service name="MailResponderService">
+        <port name="MailResponderPort" binding="tns:MailResponderBinding">
+            <smtp:address location="mailto:frank@jennings.in" smtpserver="jennings.in" useSSL="false" username="frank@jennings.in" password="************"/>
+        </port>
+    </service>
+    <plnk:partnerLinkType name="MailResponder1">
+        <!-- A partner link type is automatically generated when a new port type is added. Partner link types are used by BPEL processes. 
+In a BPEL process, a partner link represents the interaction between the BPEL process and a partner service. Each partner link is associated with a partner link type.
+A partner link type characterizes the conversational relationship between two services. The partner link type can have one or two roles.-->
+        <plnk:role name="MailResponderPortTypeRole" portType="tns:MailResponderPortType"/>
+    </plnk:partnerLinkType>
+</definitions>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jbi xmlns="http://java.sun.com/xml/ns/jbi" xmlns:ns1="ItineraryProcessorIEP_iep" version="1.0">
+    <service-assembly>
+        <identification>
+            <name>AirAlliance_SA</name>
+            <description>Represents the Service Assembly of AirAlliance_SA</description>
+        </identification>
+        <connections>
+            <connection>
+                <consumer endpoint-name="InputPort" service-name="ns1:InputService"/>
+                <provider endpoint-name="InputRn" service-name="ns1:InputPl"/>
+            </connection>
+        </connections>
+    </service-assembly>
+</jbi>

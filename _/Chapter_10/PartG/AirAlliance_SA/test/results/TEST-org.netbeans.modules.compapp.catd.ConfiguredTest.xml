@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="1" hostname="IPG" name="org.netbeans.modules.compapp.catd.ConfiguredTest" tests="1" time="0.656" timestamp="2007-11-27T04:39:14">
+  <properties>
+    <property name="default.javac.source" value="1.6" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="libs.jdbcsupport-designtime.javadoc" value="" />
+    <property name="libs.toplink.maven-pom" value="" />
+    <property name="javac.source" value="1.4" />
+    <property name="libs.exceptionhandler-runtime.maven-pom" value="" />
+    <property name="netbeans.system_http_proxy" value="DIRECT" />
+    <property name="java.home" value="C:\Program Files\Java\jdk1.6.0_03\jre" />
+    <property name="com.sun.jbi.sa.internal.routing" value="true" />
+    <property name="libs.jaxws21.src" value="" />
+    <property name="javadoc.version" value="false" />
+    <property name="ant.file.AirAlliance_SA-jbi-impl" value="E:\work\AirAlliance\latest\AirAlliance_SA\nbproject\build-impl.xml" />
+    <property name="libs.CopyLibs.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\java1\ant\extra\org-netbeans-modules-java-j2seproject-copylibstask.jar" />
+    <property name="libs.javac-api.src" value="" />
+    <property name="libs.JAVADB_DRIVER_LABEL.classpath" value="C:\openesb\glassfish-v2-ur1-b08-patch-20071112\javadb\lib\derby.jar;C:\openesb\glassfish-v2-ur1-b08-patch-20071112\javadb\lib\derbyclient.jar;C:\openesb\glassfish-v2-ur1-b08-patch-20071112\javadb\lib\derbynet.jar" />
+    <property name="libs.Encoder-COCO.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\soa1\modules\ext\encoder\coco.jar;E:\openesb\NetBeans-6.0-b44-200711121039\soa1\modules\ext\encoder\cocoencoder-xsdextension.jar" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.6.0_03\jre\lib\endorsed" />
+    <property name="libs.MySQLDriver.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\ide8\modules\ext\mysql-connector-java-5.0.7-bin.jar" />
+    <property name="libs.junit.maven-pom" value="" />
+    <property name="libs.Encoder-Custom.src" value="" />
+    <property name="libs.Encoder-Framework.maven-pom" value="" />
+    <property name="libs.jsf12.src" value="" />
+    <property name="libs.PostgreSQLDriver.src" value="" />
+    <property name="src.dir" value="src/jbiasa" />
+    <property name="nbplatform.default.harness.dir" value="E:\openesb\NetBeans-6.0-b44-200711121039/harness" />
+    <property name="libs.jbi.javadoc" value="" />
+    <property name="inDebug" value="${inDebug}" />
+    <property name="source.root" value="src" />
+    <property name="netbeans.hash.code" value="unique=NB_GLASSFISH_SOA03be5fbb0-7d23-42ef-a4f8-9907ad6c5f75" />
+    <property name="src.build.dir" value="src/jbiServiceUnits" />
+    <property name="libs.jbi.maven-pom" value="" />
+    <property name="source.encoding" value="UTF-8" />
+    <property name="libs.jaxws21.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\activation.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\FastInfoset.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\http.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\api\jaxb-api.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\jaxb-impl.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\jaxb-xjc.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\api\jaxws-api.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\jaxws-rt.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\jaxws-tools.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\api\jsr173_api.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\api\jsr181-api.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\api\jsr250-api.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\api\saaj-api.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\saaj-impl.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\sjsxp.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\stax-ex.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\streambuffer.jar" />
+    <property name="libs.swing-app-framework.javadoc" value="E:\openesb\NetBeans-6.0-b44-200711121039\java1\docs\appframework-1.0.3-doc.zip" />
+    <property name="libs.Encoder-Framework.src" value="" />
+    <property name="libs.JAVADB_DRIVER_LABEL.src" value="" />
+    <property name="sun.os.patch.level" value="Service Pack 2" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="libs.exceptionhandler-runtime.javadoc" value="" />
+    <property name="java.version" value="1.6.0_03" />
+    <property name="libs.jaxb21.javadoc" value="" />
+    <property name="libs.woodstock-theme-default.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\webui-jsf-suntheme.jar" />
+    <property name="javac.debug" value="true" />
+    <property name="org.openide.major.version" value="IDE/1" />
+    <property name="libs.PostgreSQLDriver.maven-pom" value="" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="netbeans.autoupdate.variant" value="" />
+    <property name="libs.jdbcsupport-designtime.maven-pom" value="" />
+    <property name="jbi.service-assembly.description" value="Represents the Service Assembly of AirAlliance_SA" />
+    <property name="libs.absolutelayout.javadoc" value="" />
+    <property name="libs.junit_4.maven-pom" value="" />
+    <property name="netbeans.buildnumber" value="20071112092049" />
+    <property name="AM_CONFIG_FILE" value="C:\openesb\glassfish-v2-ur1-b08-patch-20071112\domains\domain1\config\AMConfig.properties" />
+    <property name="libs.swing-app-framework.maven-pom" value="" />
+    <property name="user.name" value="TOSHIBA" />
+    <property name="libs.webui.src" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\docs\webui-src.zip" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="libs.jstl11.maven-pom" value="" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="libs.jbi.src" value="" />
+    <property name="jdk.home" value="C:\Program Files\Java\jdk1.6.0_03" />
+    <property name="jspc.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\java1\ant\lib\ant.jar:E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\servlet2.5-jsp2.1-api.jar:${j2ee.platform.classpath}:E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\glassfish-jspparser-2.0.jar:E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\glassfish-logging-2.0.jar:E:\openesb\NetBeans-6.0-b44-200711121039\ide8\modules\ext\commons-logging-1.0.4.jar:E:\openesb\NetBeans-6.0-b44-200711121039\java1\ant\lib\ant-launcher.jar" />
+    <property name="sun.awt.keepWorkingSetOnMinimize" value="true" />
+    <property name="netbeans.autoupdate.version" value="1.23" />
+    <property name="org.openide.TopManager" value="org.netbeans.core.NonGui" />
+    <property name="netbeans.dirs" value="E:\openesb\NetBeans-6.0-b44-200711121039\nb6.0;E:\openesb\NetBeans-6.0-b44-200711121039\ide8;E:\openesb\NetBeans-6.0-b44-200711121039\java1;E:\openesb\NetBeans-6.0-b44-200711121039\xml1;E:\openesb\NetBeans-6.0-b44-200711121039\apisupport1;E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4;E:\openesb\NetBeans-6.0-b44-200711121039\profiler2;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1;E:\openesb\NetBeans-6.0-b44-200711121039\soa1;E:\openesb\NetBeans-6.0-b44-200711121039\harness" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="javadoc.author" value="false" />
+    <property name="user.timezone" value="" />
+    <property name="libs.jsfsupport-runtime.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\jsfcl.jar;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\appbase.jar;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\dataprovider.jar;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\sqlx.jar" />
+    <property name="netbeans.system_http_non_proxy_hosts" value="" />
+    <property name="libs.swing-layout.maven-pom" value="" />
+    <property name="libs.junit.javadoc" value="E:\openesb\NetBeans-6.0-b44-200711121039\java1\docs\junit-3.8.2-api.zip" />
+    <property name="org.openide.specification.version" value="6.2" />
+    <property name="path.separator" value=";" />
+    <property name="libs.wsdl4j.162.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\soa1\modules\ext\wsdl4j-1.6.2.jar" />
+    <property name="rave.build" value="thresher-fcs" />
+    <property name="libs.absolutelayout.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\AbsoluteLayout.jar" />
+    <property name="libs.jsfsupport-designtime.src" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\docs\appbase-src.zip;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\docs\dataprovider-src.zip;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\docs\jsfcl-src.zip" />
+    <property name="libs.woodstock-components.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\webui-jsf.jar;E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\commons-fileupload-1.0.jar;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\json-2.jar;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\prototype-1.5.0.jar;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\dojo-0.9.0.jar;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\jsf-extensions-common-0.1.jar;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\jsf-extensions-dynamic-faces-0.1.jar" />
+    <property name="libs.jsf12-support.javadoc" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\docs\appbase-doc.zip;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\docs\dataprovider-doc.zip;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\docs\jsfcl-doc.zip" />
+    <property name="libs.Encoder-HL7.maven-pom" value="" />
+    <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="dist.javadoc.dir" value="dist/javadoc" />
+    <property name="libs.jsf12-support.src" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\docs\appbase-src.zip;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\docs\dataprovider-src.zip;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\docs\jsfcl-src.zip" />
+    <property name="libs.junit.src" value="" />
+    <property name="libs.jaxb21.maven-pom" value="" />
+    <property name="ant.file" value="E:\work\AirAlliance\latest\AirAlliance_SA\build.xml" />
+    <property name="libs.theme-default.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\defaulttheme.jar" />
+    <property name="copyfiles.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\ant\extra\copyfiles.jar" />
+    <property name="libs.junit_4.src" value="" />
+    <property name="project.ReservationBPEL" value="E:\work\AirAlliance\latest\ReservationBPEL" />
+    <property name="libs.wsdl4j.162.src" value="" />
+    <property name="libs.Encoder-Custom.maven-pom" value="" />
+    <property name="j2ee.server.instance" value="[C:\openesb\glassfish-v2-ur1-b08-patch-20071112]deployer:Sun:AppServer::localhost:4848" />
+    <property name="netbeans.autoupdate.language" value="en" />
+    <property name="java.io.tmpdir" value="C:\DOCUME~1\TOSHIBA\LOCALS~1\Temp\" />
+    <property name="user.language" value="en" />
+    <property name="line.separator" value="
+" />
+    <property name="apple.laf.useScreenMenuBar" value="true" />
+    <property name="libs.absolutelayout.src" value="" />
+    <property name="libs.webui.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\webui.jar;E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\commons-fileupload-1.0.jar" />
+    <property name="libs.woodstock-components.javadoc" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\docs\webui-jsf-doc.zip;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\docs\webui-jsf-tld.zip" />
+    <property name="libs.jdbcsupport-runtime.src" value="" />
+    <property name="jar.compress" value="false" />
+    <property name="jbi.service-unit.description" value="Represents this Service Unit" />
+    <property name="libs.jdbcsupport-runtime.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\sqlx.jar" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="libs.javac-api.maven-pom" value="" />
+    <property name="javadoc.private" value="false" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="libs.Encoder-COCO.javadoc" value="" />
+    <property name="libs.theme-default-green.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\defaulttheme-green.jar" />
+    <property name="libs.MySQLDriver.javadoc" value="" />
+    <property name="jbi.service-assembly.id" value="AirAlliance_SA" />
+    <property name="jbi.content.additional" value="E:\work\AirAlliance\latest\ReservationBPEL/build/SEDeployment.jar" />
+    <property name="netbeans.dynamic.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\platform7\core\core.jar;E:\openesb\NetBeans-6.0-b44-200711121039\platform7\core\org-openide-filesystems.jar;E:\openesb\NetBeans-6.0-b44-200711121039\nb6.0\core\org-netbeans-upgrader.jar;E:\openesb\NetBeans-6.0-b44-200711121039\nb6.0\core\locale\core_nb.jar" />
+    <property name="libs.beans-binding.javadoc" value="E:\openesb\NetBeans-6.0-b44-200711121039\java1\docs\beansbinding-1.2.1-doc.zip" />
+    <property name="libs.jdbcsupport-designtime.src" value="" />
+    <property name="platform.active" value="default_platform" />
+    <property name="meta.inf" value="src/conf" />
+    <property name="libs.junit_4.javadoc" value="" />
+    <property name="netbeans.autoupdate.country" value="US" />
+    <property name="libs.theme-default-gray.runtime" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\defaulttheme-gray.jar" />
+    <property name="test.results.dir" value="E:\work\AirAlliance\latest\AirAlliance_SA/test/results" />
+    <property name="libs.beans-binding.maven-pom" value="" />
+    <property name="javadoc.encoding" value="" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="jbi.content.component" value="sun-bpel-engine" />
+    <property name="libs.jsf12-support.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\jsfcl.jar;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\appbase.jar;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\dataprovider.jar;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\sqlx.jar" />
+    <property name="dist.jar" value="dist/AirAlliance_SA.zip" />
+    <property name="libs.Encoder-HL7.src" value="" />
+    <property name="resource.ReservationBPEL" value="E:\work\AirAlliance\latest\ReservationBPEL/setup" />
+    <property name="libs.struts.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\struts\antlr.jar;E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\struts\commons-beanutils.jar;E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\struts\commons-digester.jar;E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\struts\commons-logging.jar;E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\struts\commons-validator.jar;E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\struts\jakarta-oro.jar;E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\struts\struts.jar;E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\commons-fileupload-1.0.jar" />
+    <property name="ant.version" value="Apache Ant version 1.7.0 compiled on December 13 2006" />
+    <property name="netbeans.home" value="E:\openesb\NetBeans-6.0-b44-200711121039\platform7" />
+    <property name="javadoc.nonavbar" value="false" />
+    <property name="user.properties.file" value="C:\Documents and Settings\TOSHIBA\.netbeans\sierra\build.properties" />
+    <property name="libs.toplink.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\toplink\toplink-essentials.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\toplink\toplink-essentials-agent.jar" />
+    <property name="netbeans.importclass" value="org.netbeans.upgrade.AutoUpgrade" />
+    <property name="libs.jsf12.maven-pom" value="" />
+    <property name="module.install.dir" value="E:\openesb\NetBeans-6.0-b44-200711121039\soa1\modules" />
+    <property name="libs.exceptionhandler-runtime.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\errorhandler.jar" />
+    <property name="libs.CopyLibs.maven-pom" value="" />
+    <property name="build.generated.dir" value="build/generated" />
+    <property name="netbeans.home+have.tests" value="true" />
+    <property name="libs.Encoder-COCO.maven-pom" value="" />
+    <property name="libs.Encoder-Custom.javadoc" value="" />
+    <property name="os.name" value="Windows XP" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="libs.webui-runtime.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\webui.jar;E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\commons-fileupload-1.0.jar" />
+    <property name="NetBeansUserDir" value="C:\Documents and Settings\TOSHIBA\.netbeans\sierra" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="libs.CopyLibs.src" value="" />
+    <property name="libs.jaxb21.src" value="" />
+    <property name="org.openide.version" value="deprecated" />
+    <property name="libs.Encoder-Framework.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\soa1\modules\ext\encoder\encoderframework.jar;E:\openesb\NetBeans-6.0-b44-200711121039\soa1\modules\ext\encoder\encoderfrmwk-xsdextension.jar;E:\openesb\NetBeans-6.0-b44-200711121039\soa1\modules\ext\xmlbeans-2.1.0\xbean.jar" />
+    <property name="libs.beans-binding.src" value="" />
+    <property name="libs.junit.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\junit-3.8.2.jar" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.6.0_03\jre\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem" />
+    <property name="libs.toplink.javadoc" value="E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\docs\javaee5-doc-api.zip" />
+    <property name="libs.webui.javadoc" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\docs\webui-doc.zip" />
+    <property name="libs.PostgreSQLDriver.javadoc" value="" />
+    <property name="libs.jsfsupport-designtime.javadoc" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\docs\appbase-doc.zip;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\docs\dataprovider-doc.zip;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\docs\jsfcl-doc.zip" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="javadoc.noindex" value="false" />
+    <property name="basedir" value="E:\work\AirAlliance\latest\AirAlliance_SA" />
+    <property name="java.class.version" value="50.0" />
+    <property name="sun.awt.exception.handler" value="org.netbeans.core.startup.TopLogging$AWTHandler" />
+    <property name="j2ee.platform" value="1.4" />
+    <property name="ant.home" value="E:\openesb\NetBeans-6.0-b44-200711121039\java1\ant" />
+    <property name="javadoc.splitindex" value="true" />
+    <property name="libs.JAVADB_DRIVER_LABEL.maven-pom" value="" />
+    <property name="libs.toplink.src" value="" />
+    <property name="libs.javac-api.javadoc" value="" />
+    <property name="javadoc.preview" value="true" />
+    <property name="rave.version" value="2.0.0" />
+    <property name="libs.MySQLDriver.maven-pom" value="" />
+    <property name="libs.CopyLibs.javadoc" value="" />
+    <property name="libs.PostgreSQLDriver.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\ide8\modules\ext\postgresql-8.2-506.jdbc3.jar" />
+    <property name="libs.junit_4.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\junit-4.1.jar" />
+    <property name="libs.jaxws21.maven-pom" value="" />
+    <property name="libs.jdbcsupport-designtime.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\sqlx.jar" />
+    <property name="build.dir" value="build" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.6.0_03\jre\bin" />
+    <property name="ant.file." value="E:\work\AirAlliance\latest\AirAlliance_SA\build.xml" />
+    <property name="libs.webui-designtime.src" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\docs\webui-src.zip" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="libs.swing-app-framework.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\appframework-1.0.3.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\swing-worker-1.1.jar" />
+    <property name="user.variant" value="" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="netbeans.logger.console" value="true" />
+    <property name="libs.jbi.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\soa1\modules\ext\jbi.jar" />
+    <property name="org.netbeans.core.startup.specialResource" value="nullcom.sun.jdo.api.persistence.mapping.ejb" />
+    <property name="javadoc.windowtitle" value="" />
+    <property name="libs.wsdl4j.162.javadoc" value="" />
+    <property name="libs.wsdl4j.162.maven-pom" value="" />
+    <property name="libs.jstl11.javadoc" value="E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\docs\javaee5-doc-api.zip" />
+    <property name="build.compiler.emacs" value="true" />
+    <property name="libs.jstl11.src" value="" />
+    <property name="reference.ReservationBPEL.dist_se" value="E:\work\AirAlliance\latest\ReservationBPEL/build/SEDeployment.jar" />
+    <property name="ant.project.name" value="" />
+    <property name="libs.swing-layout.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\platform7\modules\ext\swing-layout-1.0.3.jar" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="libs.Encoder-HL7.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\soa1\modules\ext\encoder\hl7.jar;E:\openesb\NetBeans-6.0-b44-200711121039\soa1\modules\ext\encoder\hl7encoder-xsdextension.jar" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="javadoc.use" value="true" />
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="libs.exceptionhandler-runtime.src" value="" />
+    <property name="libs.jdbcsupport-runtime.javadoc" value="" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.6.0_03\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+    <property name="os.version" value="5.1" />
+    <property name="libs.jstl11.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\standard.jar;E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\jstl.jar" />
+    <property name="user.home" value="C:\Documents and Settings\TOSHIBA" />
+    <property name="org.xml.sax.driver" value="com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser" />
+    <property name="libs.jaxb21.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\activation.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\api\jaxb-api.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\jaxb-impl.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\jaxb-xjc.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\api\jsr173_api.jar" />
+    <property name="javax.xml.parsers.DocumentBuilderFactory" value="org.netbeans.core.startup.DOMFactoryImpl" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="libs.struts.src" value="" />
+    <property name="libs.absolutelayout.maven-pom" value="" />
+    <property name="libs.Encoder-COCO.src" value="" />
+    <property name="user.dir" value="E:\work\AirAlliance\latest\AirAlliance_SA" />
+    <property name="libs.Encoder-Custom.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\soa1\modules\ext\encoder\custom.jar;E:\openesb\NetBeans-6.0-b44-200711121039\soa1\modules\ext\encoder\customencoder-xsdextension.jar" />
+    <property name="org.openide.TopManager.GUI" value="true" />
+    <property name="libs.jsf12.javadoc" value="E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\docs\javaee5-doc-api.zip" />
+    <property name="test.dir" value="test" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="com.sun.jbi.routing" value="true" />
+    <property name="libs.woodstock-components.src" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\docs\webui-jsf-src.zip" />
+    <property name="libs.MySQLDriver.src" value="" />
+    <property name="java.vm.version" value="1.6.0_03-b05" />
+    <property name="libs.webui-designtime.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\webui.jar;E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\commons-fileupload-1.0.jar" />
+    <property name="java.class.path" value="E:\openesb\NetBeans-6.0-b44-200711121039\soa1\modules\org-netbeans-modules-compapp-manager-jbi.jar;E:\openesb\NetBeans-6.0-b44-200711121039\soa1\modules\ext\jbi\catd.jar;E:\openesb\NetBeans-6.0-b44-200711121039\soa1\modules\ext\jbi\xmlunit-1.0.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\junit-3.8.2.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\api\saaj-api.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\saaj-impl.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\FastInfoset.jar;E:\openesb\NetBeans-6.0-b44-200711121039\ide8\modules\org-netbeans-modules-xml-xdm.jar;E:\openesb\NetBeans-6.0-b44-200711121039\ide8\modules\org-netbeans-modules-xml-xam.jar;E:\openesb\NetBeans-6.0-b44-200711121039\ide8\modules\org-netbeans-modules-editor-lib.jar;E:\openesb\NetBeans-6.0-b44-200711121039\ide8\modules\org-netbeans-modules-xml-text.jar;E:\openesb\NetBeans-6.0-b44-200711121039\ide8\modules\org-netbeans-modules-editor.jar;E:\openesb\NetBeans-6.0-b44-200711121039\ide8\modules\org-netbeans-modules-editor-util.jar;E:\openesb\NetBeans-6.0-b44-200711121039\ide8\modules\org-netbeans-modules-xml-core.jar;E:\openesb\NetBeans-6.0-b44-200711121039\ide8\modules\org-netbeans-modules-editor-lib2.jar;E:\openesb\NetBeans-6.0-b44-200711121039\platform7\lib\org-openide-modules.jar;E:\openesb\NetBeans-6.0-b44-200711121039\platform7\lib\org-openide-util.jar;E:\openesb\NetBeans-6.0-b44-200711121039\platform7\modules\org-openide-options.jar;E:\openesb\NetBeans-6.0-b44-200711121039\platform7\modules\org-openide-text.jar;E:\openesb\NetBeans-6.0-b44-200711121039\platform7\modules\org-openide-loaders.jar;E:\openesb\NetBeans-6.0-b44-200711121039\platform7\modules\org-openide-nodes.jar;E:\openesb\NetBeans-6.0-b44-200711121039\platform7\modules\org-netbeans-modules-editor-mimelookup.jar;E:\openesb\NetBeans-6.0-b44-200711121039\platform7\core\org-openide-filesystems.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\ant\lib\ant-launcher.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\ant\lib\ant.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\ant\lib\ant-junit.jar" />
+    <property name="javax.xml.parsers.SAXParserFactory" value="org.netbeans.core.startup.SAXFactoryImpl" />
+    <property name="os.arch" value="x86" />
+    <property name="javac.deprecation" value="false" />
+    <property name="libs.woodstock-theme-default.runtime" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\webui-jsf-suntheme.jar" />
+    <property name="libs.webui-designtime.javadoc" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\docs\webui-doc.zip" />
+    <property name="nbplatform.default.netbeans.dest.dir" value="E:\openesb\NetBeans-6.0-b44-200711121039" />
+    <property name="build.classes.excludes" value="**/*.java,**/*.form,**/.nbattrs" />
+    <property name="libs.theme-default.runtime" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\defaulttheme.jar" />
+    <property name="dist.dir" value="dist" />
+    <property name="netbeans.user" value="C:\Documents and Settings\TOSHIBA\.netbeans\sierra" />
+    <property name="debug.classpath" value="${javac.classpath}:build/jar" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="ant.core.lib" value="E:\openesb\NetBeans-6.0-b44-200711121039\java1\ant\lib\ant.jar" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="com.sun.aas.installRoot" value="C:\openesb\glassfish-v2-ur1-b08-patch-20071112" />
+    <property name="libs.JAVADB_DRIVER_LABEL.javadoc" value="" />
+    <property name="file.separator" value="\" />
+    <property name="libs.jdbcsupport-runtime.maven-pom" value="" />
+    <property name="java.runtime.version" value="1.6.0_03-b05" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.6.0_03\jre\lib\resources.jar;C:\Program Files\Java\jdk1.6.0_03\jre\lib\rt.jar;C:\Program Files\Java\jdk1.6.0_03\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.6.0_03\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.6.0_03\jre\lib\jce.jar;C:\Program Files\Java\jdk1.6.0_03\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.6.0_03\jre\classes" />
+    <property name="libs.theme-default-gray.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\defaulttheme-gray.jar" />
+    <property name="libs.beans-binding.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\beansbinding-1.2.1.jar" />
+    <property name="have.tests" value="true" />
+    <property name="java.util.logging.config.class" value="org.netbeans.core.startup.TopLogging" />
+    <property name="libs.javac-api.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\javac-api-nb-7.0-b07.jar" />
+    <property name="user.country" value="US" />
+    <property name="javadoc.notree" value="false" />
+    <property name="libs.jsfsupport-designtime.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\jsfcl.jar;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\appbase.jar;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\dataprovider.jar;E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\sqlx.jar" />
+    <property name="libs.struts.javadoc" value="E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\docs\struts-1.2.9-javadoc.zip" />
+    <property name="libs.Encoder-Framework.javadoc" value="" />
+    <property name="libs.jaxws21.javadoc" value="E:\openesb\NetBeans-6.0-b44-200711121039\java1\docs\jaxws-2_1-api-doc.zip" />
+    <property name="libs.jsf12.classpath" value="E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\jsf-1_2\commons-beanutils.jar;E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\jsf-1_2\commons-collections.jar;E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\jsf-1_2\commons-digester.jar;E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\jsf-1_2\commons-logging.jar;E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\jsf-1_2\jsf-api.jar;E:\openesb\NetBeans-6.0-b44-200711121039\enterprise4\modules\ext\jsf-1_2\jsf-impl.jar" />
+    <property name="default.javac.target" value="1.6" />
+    <property name="build.classes.dir" value="build/jar" />
+    <property name="libs.swing-layout.javadoc" value="E:\openesb\NetBeans-6.0-b44-200711121039\platform7\docs\swing-layout-1.0.3-doc.zip" />
+    <property name="libs.swing-layout.src" value="E:\openesb\NetBeans-6.0-b44-200711121039\platform7\docs\swing-layout-1.0.3-src.zip" />
+    <property name="javac.target" value="1.4" />
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="libs.theme-default-green.runtime" value="E:\openesb\NetBeans-6.0-b44-200711121039\visualweb1\modules\ext\defaulttheme-green.jar" />
+    <property name="libs.swing-app-framework.src" value="" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="libs.struts.maven-pom" value="" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="libs.Encoder-HL7.javadoc" value="" />
+  </properties>
+  <testcase classname="org.netbeans.modules.compapp.catd.ConfiguredTest" name="TestReservation" time="0.594">
+    <failure message="[Nov 26, 2007 8:39:15 PM] The response is not identical to the expected output." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: [Nov 26, 2007 8:39:15 PM] The response is not identical to the expected output.
+	at org.netbeans.modules.compapp.catd.ConfiguredTest.checkExpectedOutput(ConfiguredTest.java:2190)
+	at org.netbeans.modules.compapp.catd.ConfiguredTest.checkExpectedOutput(ConfiguredTest.java:2074)
+	at org.netbeans.modules.compapp.catd.ConfiguredTest.testConcurrentSOAPRequest(ConfiguredTest.java:761)
+</failure>
+  </testcase>
+  <system-out><![CDATA[{java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=C:\Program Files\Java\jdk1.6.0_03\jre\bin, java.vm.version=1.6.0_03-b05, java.vm.vendor=Sun Microsystems Inc., java.vendor.url=http://java.sun.com/, path.separator=;, java.vm.name=Java HotSpot(TM) Client VM, file.encoding.pkg=sun.io, sun.java.launcher=SUN_STANDARD, user.country=US, sun.os.patch.level=Service Pack 2, java.vm.specification.name=Java Virtual Machine Specification, user.dir=E:\work\AirAlliance\latest\AirAlliance_SA, java.runtime.version=1.6.0_03-b05, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, inDebug=${inDebug}, java.endorsed.dirs=C:\Program Files\Java\jdk1.6.0_03\jre\lib\endorsed, os.arch=x86, java.io.tmpdir=C:\DOCUME~1\TOSHIBA\LOCALS~1\Temp\, line.separator=
+, java.vm.specification.vendor=Sun Microsystems Inc., user.variant=, os.name=Windows XP, sun.jnu.encoding=Cp1252, java.library.path=C:\Program Files\Java\jdk1.6.0_03\jre\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem, java.specification.name=Java Platform API Specification, java.class.version=50.0, sun.management.compiler=HotSpot Client Compiler, os.version=5.1, user.home=C:\Documents and Settings\TOSHIBA, user.timezone=America/Los_Angeles, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=Cp1252, java.specification.version=1.6, java.class.path=E:\openesb\NetBeans-6.0-b44-200711121039\soa1\modules\org-netbeans-modules-compapp-manager-jbi.jar;E:\openesb\NetBeans-6.0-b44-200711121039\soa1\modules\ext\jbi\catd.jar;E:\openesb\NetBeans-6.0-b44-200711121039\soa1\modules\ext\jbi\xmlunit-1.0.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\junit-3.8.2.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\api\saaj-api.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\saaj-impl.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\modules\ext\jaxws21\FastInfoset.jar;E:\openesb\NetBeans-6.0-b44-200711121039\ide8\modules\org-netbeans-modules-xml-xdm.jar;E:\openesb\NetBeans-6.0-b44-200711121039\ide8\modules\org-netbeans-modules-xml-xam.jar;E:\openesb\NetBeans-6.0-b44-200711121039\ide8\modules\org-netbeans-modules-editor-lib.jar;E:\openesb\NetBeans-6.0-b44-200711121039\ide8\modules\org-netbeans-modules-xml-text.jar;E:\openesb\NetBeans-6.0-b44-200711121039\ide8\modules\org-netbeans-modules-editor.jar;E:\openesb\NetBeans-6.0-b44-200711121039\ide8\modules\org-netbeans-modules-editor-util.jar;E:\openesb\NetBeans-6.0-b44-200711121039\ide8\modules\org-netbeans-modules-xml-core.jar;E:\openesb\NetBeans-6.0-b44-200711121039\ide8\modules\org-netbeans-modules-editor-lib2.jar;E:\openesb\NetBeans-6.0-b44-200711121039\platform7\lib\org-openide-modules.jar;E:\openesb\NetBeans-6.0-b44-200711121039\platform7\lib\org-openide-util.jar;E:\openesb\NetBeans-6.0-b44-200711121039\platform7\modules\org-openide-options.jar;E:\openesb\NetBeans-6.0-b44-200711121039\platform7\modules\org-openide-text.jar;E:\openesb\NetBeans-6.0-b44-200711121039\platform7\modules\org-openide-loaders.jar;E:\openesb\NetBeans-6.0-b44-200711121039\platform7\modules\org-openide-nodes.jar;E:\openesb\NetBeans-6.0-b44-200711121039\platform7\modules\org-netbeans-modules-editor-mimelookup.jar;E:\openesb\NetBeans-6.0-b44-200711121039\platform7\core\org-openide-filesystems.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\ant\lib\ant-launcher.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\ant\lib\ant.jar;E:\openesb\NetBeans-6.0-b44-200711121039\java1\ant\lib\ant-junit.jar, user.name=TOSHIBA, java.vm.specification.version=1.0, java.home=C:\Program Files\Java\jdk1.6.0_03\jre, sun.arch.data.model=32, user.language=en, java.specification.vendor=Sun Microsystems Inc., NetBeansUserDir=C:\Documents and Settings\TOSHIBA\.netbeans\sierra, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, sharing, java.version=1.6.0_03, java.ext.dirs=C:\Program Files\Java\jdk1.6.0_03\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jdk1.6.0_03\jre\lib\resources.jar;C:\Program Files\Java\jdk1.6.0_03\jre\lib\rt.jar;C:\Program Files\Java\jdk1.6.0_03\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.6.0_03\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.6.0_03\jre\lib\jce.jar;C:\Program Files\Java\jdk1.6.0_03\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.6.0_03\jre\classes, java.vendor=Sun Microsystems Inc., file.separator=\, java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.desktop=windows, sun.cpu.isalist=pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86}
+Test TestReservation\Concurrent.properties Failed.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

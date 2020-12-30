@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jbi xmlns="http://java.sun.com/xml/ns/jbi" xmlns:ns1="http://j2ee.netbeans.org/wsdl/ProcessReservation" xmlns:ns2="http://enterprise.netbeans.org/bpel/ReservationBPEL/ReservationBP" xmlns:ns3="http://northair.airalliance.org/" version="1.0">
+    <service-assembly>
+        <identification>
+            <name>AirAlliance_CA</name>
+            <description>Represents the Service Assembly of AirAlliance_CA</description>
+        </identification>
+        <connections>
+            <connection>
+                <consumer endpoint-name="ProcessReservationPort" service-name="ns1:ProcessReservationService"/>
+                <provider endpoint-name="ProcessReservationPortTypeRole_myRole" service-name="ns2:ProcessReservation_PL"/>
+            </connection>
+            <connection>
+                <consumer endpoint-name="NorthAirWSRole_partnerRole" service-name="ns2:NorthAirWS_PL"/>
+                <provider endpoint-name="NorthAirWSPort" service-name="ns3:NorthAirWSService"/>
+            </connection>
+        </connections>
+    </service-assembly>
+</jbi>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <xsd:schema elementFormDefault="qualified" targetNamespace="http://j2ee.netbeans.org/xsd/tableSchema" xmlns="http://j2ee.netbeans.org/xsd/tableSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="ITINERARY" type="ITINERARY"></xsd:element>
+    <xsd:complexType name="ITINERARY">
+      <xsd:sequence maxOccurs="unbounded">
+        <xsd:element name="SEQID" type="xsd:decimal"></xsd:element>
+        <xsd:element name="FIRSTNAME" type="xsd:string"></xsd:element>
+        <xsd:element name="FOODPREFERENCE" type="xsd:string"></xsd:element>
+        <xsd:element name="SOURCE" type="xsd:string"></xsd:element>
+        <xsd:element name="GUESTID" type="xsd:string"></xsd:element>
+        <xsd:element name="SEATPREFERENCE" type="xsd:string"></xsd:element>
+        <xsd:element name="DESTINATION" type="xsd:string"></xsd:element>
+        <xsd:element name="TRAVELDATE" type="xsd:string"></xsd:element>
+        <xsd:element name="LASTNAME" type="xsd:string"></xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:schema>

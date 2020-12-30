@@ -1,0 +1,9 @@
+SeqID,FirstName,FoodPreference,Source,GuestID,SeatPreference,Destination,LastName
+31,Abel,Veg,BLR,g001,Win,MAS,Jennings
+12,Osbert,Veg,BLR,g002,Win,QWE,Jennings
+03,Frank,Veg,BLR,g003,Win,QWE,Osbert
+14,Frank,Veg,BLR,g004,Win,QWE,Jennings
+4,Osbert,Veg,BLR,g005,Win,QWE,Jen
+01,Fat,Veg,BLR,g006,Win,QWE,Jen
+06,Fermat,Veg,BLR,g007,Win,QWE,Jen
+01,Phantom,Veg,BLR,g008,Win,QWE,Jen

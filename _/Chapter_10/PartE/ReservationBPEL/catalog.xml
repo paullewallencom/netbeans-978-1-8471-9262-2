@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/NorthAirWSService/NorthAirWS?wsdl" uri="src/Partners/NorthAirWS/NorthAirWS.wsdl"/>
+    <system systemId="http://localhost:8080/NorthAirWSService/NorthAirWS?xsd=1" uri="src/Partners/NorthAirWS/NorthAirWS_xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/WestAir_WSService/WestAir_WS?wsdl" uri="src/Partners/WestAir_WSService/WestAir_WS.wsdl"/>
+    <system systemId="http://localhost:8080/WestAir_WSService/WestAir_WS?xsd=1" uri="src/Partners/WestAir_WSService/WestAir_WS_xsd_1.xsd"/>
+</catalog>

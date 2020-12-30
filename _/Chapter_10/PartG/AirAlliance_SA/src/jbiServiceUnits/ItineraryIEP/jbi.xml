@@ -1,0 +1,9 @@
+<!--start of generated code -->
+<jbi version="1.0"
+        xmlns="http://java.sun.com/xml/ns/jbi"
+        xmlns:ns1="ItineraryProcessorIEP_iep">
+    <services binding-component="false">
+        <provides interface-name="ns1:InputPt" service-name="ns1:InputPl" endpoint-name="InputRn"/>
+    </services>
+ </jbi>
+<!--end of generated code -->

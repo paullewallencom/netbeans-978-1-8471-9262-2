@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="ProcessReservation" targetNamespace="http://j2ee.netbeans.org/wsdl/ProcessReservation"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://j2ee.netbeans.org/wsdl/ProcessReservation" xmlns:ns="http://northair.airalliance.org/" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+    <types>
+        <xsd:schema targetNamespace="http://j2ee.netbeans.org/wsdl/ProcessReservation">
+            <xsd:import namespace="http://northair.airalliance.org/" schemaLocation="Partners/NorthAirWS/NorthAirWS_xsd_1.xsd"/>
+        </xsd:schema>
+    </types>
+    <message name="ProcessReservationOperationRequest">
+        <part name="inputItinerary" element="ns:processItinerary"/>
+    </message>
+    <message name="ProcessReservationOperationReply">
+        <part name="outputItinerary" element="ns:processItineraryResponse"/>
+    </message>
+    <portType name="ProcessReservationPortType">
+        <operation name="ProcessReservationOperation">
+            <input name="input1" message="tns:ProcessReservationOperationRequest"/>
+            <output name="output1" message="tns:ProcessReservationOperationReply"/>
+        </operation>
+    </portType>
+    <binding name="ProcessReservationBinding" type="tns:ProcessReservationPortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="ProcessReservationOperation">
+            <soap:operation/>
+            <input name="input1">
+                <soap:body use="literal"/>
+            </input>
+            <output name="output1">
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+    </binding>
+    <service name="ProcessReservationService">
+        <port name="ProcessReservationPort" binding="tns:ProcessReservationBinding">
+            <soap:address location="http://localhost:18181/ProcessReservationService/ProcessReservationPort"/>
+        </port>
+    </service>
+    <plnk:partnerLinkType name="ProcessReservation">
+        <!-- A partner link type is automatically generated when a new port type is added. Partner link types are used by BPEL processes. 
+In a BPEL process, a partner link represents the interaction between the BPEL process and a partner service. Each partner link is associated with a partner link type.
+A partner link type characterizes the conversational relationship between two services. The partner link type can have one or two roles.-->
+        <plnk:role name="ProcessReservationPortTypeRole" portType="tns:ProcessReservationPortType"/>
+    </plnk:partnerLinkType>
+</definitions>

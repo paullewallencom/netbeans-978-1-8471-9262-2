@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <definitions 
+ xmlns="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="NorthAirWSService" targetNamespace="http://northair.airalliance.org/" xmlns:tns="http://northair.airalliance.org/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsaws="http://www.w3.org/2005/08/addressing" xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy" xmlns:sc="http://schemas.sun.com/2006/03/wss/server" xmlns:wspp="http://java.sun.com/xml/ns/wsit/policy" xmlns:wsoma="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy" 
+ >
+    <message name="processItinerary"/>
+    <message name="processItineraryResponse"/>
+    <portType name="NorthAirWS">
+        <operation name="processItinerary">
+            <input message="tns:processItinerary"/>
+            <output message="tns:processItineraryResponse"/>
+        </operation>
+    </portType>
+    <binding name="NorthAirWSPortBinding" type="tns:NorthAirWS">
+        <operation name="processItinerary">
+            <input></input>
+            <output></output>
+        </operation>
+    </binding>
+    <service name="NorthAirWSService">
+        <port name="NorthAirWSPort" binding="tns:NorthAirWSPortBinding"/>
+    </service>
+</definitions>

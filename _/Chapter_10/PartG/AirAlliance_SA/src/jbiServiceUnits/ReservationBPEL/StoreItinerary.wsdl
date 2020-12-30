@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="StoreItinerary" targetNamespace="http://j2ee.netbeans.org/wsdl/StoreItinerary"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://j2ee.netbeans.org/wsdl/StoreItinerary" xmlns:ns="http://j2ee.netbeans.org/xsd/tableSchema" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:file="http://schemas.sun.com/jbi/wsdl-extensions/file/">
+    <types>
+        <xsd:schema targetNamespace="http://j2ee.netbeans.org/wsdl/StoreItinerary">
+            <xsd:import namespace="http://j2ee.netbeans.org/xsd/tableSchema" schemaLocation="ITINERARY.xsd"/>
+        </xsd:schema>
+    </types>
+    <message name="StoreItineraryOperationRequest">
+        <part name="inputItinerary" element="ns:ITINERARY"/>
+    </message>
+    <portType name="StoreItineraryPortType">
+        <operation name="StoreItineraryOperation">
+            <input name="input1" message="tns:StoreItineraryOperationRequest"/>
+        </operation>
+    </portType>
+    <binding name="StoreItineraryBinding" type="tns:StoreItineraryPortType">
+        <file:binding/>
+        <operation name="StoreItineraryOperation">
+            <file:operation/>
+            <input name="input1">
+                <file:message use="literal" fileName="GuestItinerary.xml" pollingInterval="1000" multipleRecordsPerFile="true" recordDelimiter="\r\n" addEOL="true"/>
+            </input>
+        </operation>
+    </binding>
+    <service name="StoreItineraryService">
+        <port name="StoreItineraryPort" binding="tns:StoreItineraryBinding">
+            <file:address fileDirectory="E:\work\AirAlliance\IStore" lockName="filebc.lck" workArea="filebc_tmp" seqName="filebc.seq"/>
+        </port>
+    </service>
+    <plnk:partnerLinkType name="StoreItinerary">
+        <!-- A partner link type is automatically generated when a new port type is added. Partner link types are used by BPEL processes. 
+In a BPEL process, a partner link represents the interaction between the BPEL process and a partner service. Each partner link is associated with a partner link type.
+A partner link type characterizes the conversational relationship between two services. The partner link type can have one or two roles.-->
+        <plnk:role name="StoreItineraryPortTypeRole" portType="tns:StoreItineraryPortType"/>
+    </plnk:partnerLinkType>
+</definitions>

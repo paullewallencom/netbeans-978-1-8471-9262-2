@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="SendItinerary" targetNamespace="http://j2ee.netbeans.org/wsdl/SendItinerary"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://j2ee.netbeans.org/wsdl/SendItinerary" xmlns:ns="http://j2ee.netbeans.org/xsd/tableSchema" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:jms="http://schemas.sun.com/jbi/wsdl-extensions/jms/">
+    <types>
+        <xsd:schema targetNamespace="http://j2ee.netbeans.org/wsdl/SendItinerary">
+            <xsd:import namespace="http://j2ee.netbeans.org/xsd/tableSchema" schemaLocation="ITINERARY.xsd"/>
+        </xsd:schema>
+    </types>
+    <message name="SendItineraryOperationRequest">
+        <part name="inputItinerary" element="ns:ITINERARY"/>
+    </message>
+    <portType name="SendItineraryPortType">
+        <operation name="SendItineraryOperation">
+            <input name="input1" message="tns:SendItineraryOperationRequest"/>
+        </operation>
+    </portType>
+    <binding name="SendItineraryBinding" type="tns:SendItineraryPortType">
+        <jms:binding/>
+        <operation name="SendItineraryOperation">
+            <jms:operation destination="EastAirQueue" destinationType="Queue"/>
+            <input name="input1">
+                <jms:message messageType="TextMessage" textPart="inputItinerary"/>
+            </input>
+        </operation>
+    </binding>
+    <service name="SendItineraryService">
+        <port name="SendItineraryPort" binding="tns:SendItineraryBinding">
+            <jms:address connectionURL="mq://localhost:7676" username="admin" password="admin"/>
+        </port>
+    </service>
+    <plnk:partnerLinkType name="SendItinerary">
+        <!-- A partner link type is automatically generated when a new port type is added. Partner link types are used by BPEL processes. 
+In a BPEL process, a partner link represents the interaction between the BPEL process and a partner service. Each partner link is associated with a partner link type.
+A partner link type characterizes the conversational relationship between two services. The partner link type can have one or two roles.-->
+        <plnk:role name="SendItineraryPortTypeRole" portType="tns:SendItineraryPortType"/>
+    </plnk:partnerLinkType>
+</definitions>

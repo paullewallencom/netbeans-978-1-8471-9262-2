@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<casa xmlns="http://java.sun.com/xml/ns/casa" xmlns:ns1="http://northair.airalliance.org/" xmlns:ns10="http://enterprise.netbeans.org/bpel/ReservationBPEL/ReservationBP" xmlns:ns2="http://j2ee.netbeans.org/wsdl/StoreItinerary" xmlns:ns3="http://j2ee.netbeans.org/wsdl/ProcessReservation" xmlns:ns4="http://j2ee.netbeans.org/wsdl/Itinerary_SA" xmlns:ns5="http://j2ee.netbeans.org/wsdl/SendItinerary" xmlns:ns6="http://westair.airalliance.org/" xmlns:ns7="http://j2ee.netbeans.org/wsdl/UploadItinerary" xmlns:ns8="http://airalliance.org/" xmlns:ns9="http://j2ee.netbeans.org/wsdl/MailResponder" xmlns:xlink="http://www.w3.org/2000/xlink">
+    <endpoints>
+        <endpoint endpoint-name="NorthAirWSPort" interface-name="ns1:NorthAirWS" name="endpoint1" service-name="ns1:NorthAirWSService"/>
+        <endpoint endpoint-name="StoreItineraryPort" interface-name="ns2:StoreItineraryPortType" name="endpoint2" service-name="ns2:StoreItineraryService"/>
+        <endpoint endpoint-name="ProcessReservationPort" interface-name="ns3:ProcessReservationPortType" name="endpoint3" service-name="ns3:ProcessReservationService"/>
+        <endpoint endpoint-name="port" interface-name="ns4:jdbcPortType" name="endpoint4" service-name="ns4:service"/>
+        <endpoint endpoint-name="SendItineraryPort" interface-name="ns5:SendItineraryPortType" name="endpoint5" service-name="ns5:SendItineraryService"/>
+        <endpoint endpoint-name="WestAir_WSPort" interface-name="ns6:WestAir_WS" name="endpoint6" service-name="ns6:WestAir_WSService"/>
+        <endpoint endpoint-name="UploadItineraryPort" interface-name="ns7:UploadItineraryPortType" name="endpoint7" service-name="ns7:UploadItineraryService"/>
+        <endpoint endpoint-name="AAPreProcessor_WSPort" interface-name="ns8:AAPreProcessor_WS" name="endpoint8" service-name="ns8:AAPreProcessor_WSService"/>
+        <endpoint endpoint-name="MailResponderPort" interface-name="ns9:MailResponderPortType" name="endpoint9" service-name="ns9:MailResponderService"/>
+        <endpoint endpoint-name="ProcessReservationPortTypeRole_myRole" interface-name="ns3:ProcessReservationPortType" name="endpoint10" service-name="ns10:ProcessReservation_PL"/>
+        <endpoint endpoint-name="MailResponderPortTypeRole_partnerRole" interface-name="ns9:MailResponderPortType" name="endpoint11" service-name="ns10:MailResponder_PL"/>
+        <endpoint endpoint-name="AAPreProcessor_WSRole_partnerRole" interface-name="ns8:AAPreProcessor_WS" name="endpoint12" service-name="ns10:PreProcessor"/>
+        <endpoint endpoint-name="UploadItineraryPortTypeRole_partnerRole" interface-name="ns7:UploadItineraryPortType" name="endpoint13" service-name="ns10:UploadItinerary_PL"/>
+        <endpoint endpoint-name="WestAir_WSRole_partnerRole" interface-name="ns6:WestAir_WS" name="endpoint14" service-name="ns10:WestAir_PL"/>
+        <endpoint endpoint-name="SendItineraryPortTypeRole_partnerRole" interface-name="ns5:SendItineraryPortType" name="endpoint15" service-name="ns10:SendItinerary_PL"/>
+        <endpoint endpoint-name="StoreItineraryPortTypeRole_partnerRole" interface-name="ns2:StoreItineraryPortType" name="endpoint16" service-name="ns10:StoreItinerary_PL"/>
+        <endpoint endpoint-name="jdbcPortTypeRole_partnerRole" interface-name="ns4:jdbcPortType" name="endpoint17" service-name="ns10:UpdateSA_DB"/>
+        <endpoint endpoint-name="NorthAirWSRole_partnerRole" interface-name="ns1:NorthAirWS" name="endpoint18" service-name="ns10:NorthAirWS_PL"/>
+    </endpoints>
+    <service-units>
+        <service-engine-service-unit artifacts-zip="ReservationBPEL.jar" component-name="sun-bpel-engine" defined="true" description="Represents this Service Unit" internal="true" name="AirAlliance_SA-ReservationBPEL" unit-name="ReservationBPEL" unknown="false" x="102" y="97">
+            <provides endpoint="endpoint10"/>
+            <consumes endpoint="endpoint11"/>
+            <consumes endpoint="endpoint12"/>
+            <consumes endpoint="endpoint13"/>
+            <consumes endpoint="endpoint14"/>
+            <consumes endpoint="endpoint15"/>
+            <consumes endpoint="endpoint16"/>
+            <consumes endpoint="endpoint17"/>
+            <consumes endpoint="endpoint18"/>
+        </service-engine-service-unit>
+        <binding-component-service-unit artifacts-zip="sun-http-binding.jar" component-name="sun-http-binding" description="Represents this Service Unit" name="AirAlliance_SA-sun-http-binding" unit-name="sun-http-binding">
+            <ports>
+                <port x="67" y="195">
+                    <link xlink:href="../jbiServiceUnits/ReservationBPEL/Partners/AAPreProcessor_WS/AAPreProcessor_WS.wsdl#xpointer(/definitions/service[@name='AAPreProcessor_WSService']/port[@name='AAPreProcessor_WSPort'])" xlink:type="simple"/>
+                    <consumes endpoint="endpoint8"/>
+                    <provides endpoint="endpoint8"/>
+                </port>
+                <port x="67" y="671">
+                    <link xlink:href="../jbiServiceUnits/ReservationBPEL/Partners/NorthAirWS/NorthAirWS.wsdl#xpointer(/definitions/service[@name='NorthAirWSService']/port[@name='NorthAirWSPort'])" xlink:type="simple"/>
+                    <consumes endpoint="endpoint1"/>
+                    <provides endpoint="endpoint1"/>
+                </port>
+                <port x="67" y="276">
+                    <link xlink:href="../jbiServiceUnits/ReservationBPEL/Partners/WestAir_WS/WestAir_WS.wsdl#xpointer(/definitions/service[@name='WestAir_WSService']/port[@name='WestAir_WSPort'])" xlink:type="simple"/>
+                    <consumes endpoint="endpoint6"/>
+                    <provides endpoint="endpoint6"/>
+                    <link xlink:href="../jbiServiceUnits/ReservationBPEL/Partners/WestAir_WSService/WestAir_WS.wsdl#xpointer(/definitions/service[@name='WestAir_WSService']/port[@name='WestAir_WSPort'])" xlink:type="simple"/>
+                </port>
+                <port x="67" y="592">
+                    <link xlink:href="../jbiServiceUnits/ReservationBPEL/ProcessReservation.wsdl#xpointer(/definitions/service[@name='ProcessReservationService']/port[@name='ProcessReservationPort'])" xlink:type="simple"/>
+                    <consumes endpoint="endpoint3"/>
+                    <provides endpoint="endpoint3"/>
+                </port>
+                <port state="deleted" x="67" y="39">
+                    <link xlink:href="../jbiServiceUnits/ReservationBPEL/SendItinerary.wsdl#xpointer(/definitions/service[@name='SendItineraryService']/port[@name='SendItineraryPort'])" xlink:type="simple"/>
+                    <consumes endpoint="endpoint5"/>
+                    <provides endpoint="endpoint5"/>
+                </port>
+                <port state="deleted" x="67" y="118">
+                    <link xlink:href="../jbiServiceUnits/ReservationBPEL/StoreItinerary.wsdl#xpointer(/definitions/service[@name='StoreItineraryService']/port[@name='StoreItineraryPort'])" xlink:type="simple"/>
+                    <consumes endpoint="endpoint2"/>
+                    <provides endpoint="endpoint2"/>
+                </port>
+                <port state="deleted" x="67" y="37">
+                    <link xlink:href="../jbiServiceUnits/ReservationBPEL/UploadItinerary.wsdl#xpointer(/definitions/service[@name='UploadItineraryService']/port[@name='UploadItineraryPort'])" xlink:type="simple"/>
+                    <consumes endpoint="endpoint7"/>
+                    <provides endpoint="endpoint7"/>
+                </port>
+            </ports>
+        </binding-component-service-unit>
+        <binding-component-service-unit artifacts-zip="sun-jdbc-binding.jar" component-name="sun-jdbc-binding" description="Represents this Service Unit" name="AirAlliance_SA-sun-jdbc-binding" unit-name="sun-jdbc-binding">
+            <ports>
+                <port x="67" y="434">
+                    <link xlink:href="../jbiServiceUnits/ReservationBPEL/Itinerary_SA.wsdl#xpointer(/definitions/service[@name='service']/port[@name='port'])" xlink:type="simple"/>
+                    <consumes endpoint="endpoint4"/>
+                    <provides endpoint="endpoint4"/>
+                </port>
+            </ports>
+        </binding-component-service-unit>
+        <binding-component-service-unit artifacts-zip="sun-smtp-binding.jar" component-name="sun-smtp-binding" description="Represents this Service Unit" name="AirAlliance_SA-sun-smtp-binding" unit-name="sun-smtp-binding">
+            <ports>
+                <port x="67" y="116">
+                    <link xlink:href="../jbiServiceUnits/ReservationBPEL/MailResponder.wsdl#xpointer(/definitions/service[@name='MailResponderService']/port[@name='MailResponderPort'])" xlink:type="simple"/>
+                    <consumes endpoint="endpoint9"/>
+                    <provides endpoint="endpoint9"/>
+                </port>
+            </ports>
+        </binding-component-service-unit>
+    </service-units>
+    <connections>
+        <connection consumer="endpoint17" provider="endpoint4" state="unchanged"/>
+        <connection consumer="endpoint11" provider="endpoint9" state="unchanged"/>
+        <connection consumer="endpoint3" provider="endpoint10" state="unchanged"/>
+        <connection consumer="endpoint14" provider="endpoint6" state="unchanged"/>
+        <connection consumer="endpoint18" provider="endpoint1" state="unchanged"/>
+        <connection consumer="endpoint12" provider="endpoint8" state="unchanged"/>
+        <connection consumer="endpoint13" provider="endpoint7" state="deleted"/>
+        <connection consumer="endpoint16" provider="endpoint2" state="deleted"/>
+        <connection consumer="endpoint15" provider="endpoint5" state="deleted"/>
+    </connections>
+    <porttypes>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/Itinerary_SA.wsdl#xpointer(/definitions/portType[@name='jdbcPortType'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/MailResponder.wsdl#xpointer(/definitions/portType[@name='MailResponderPortType'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/Partners/AAPreProcessor_WS/AAPreProcessor_WS.wsdl#xpointer(/definitions/portType[@name='AAPreProcessor_WS'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/Partners/NorthAirWS/NorthAirWS.wsdl#xpointer(/definitions/portType[@name='NorthAirWS'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/Partners/WestAir_WS/WestAir_WS.wsdl#xpointer(/definitions/portType[@name='WestAir_WS'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/Partners/WestAir_WSService/WestAir_WS.wsdl#xpointer(/definitions/portType[@name='WestAir_WS'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/ProcessReservation.wsdl#xpointer(/definitions/portType[@name='ProcessReservationPortType'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/SendItinerary.wsdl#xpointer(/definitions/portType[@name='SendItineraryPortType'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/StoreItinerary.wsdl#xpointer(/definitions/portType[@name='StoreItineraryPortType'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/UploadItinerary.wsdl#xpointer(/definitions/portType[@name='UploadItineraryPortType'])" xlink:type="simple"/>
+    </porttypes>
+    <bindings>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/Itinerary_SA.wsdl#xpointer(/definitions/binding[@name='binding'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/MailResponder.wsdl#xpointer(/definitions/binding[@name='MailResponderBinding'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/Partners/AAPreProcessor_WS/AAPreProcessor_WS.wsdl#xpointer(/definitions/binding[@name='AAPreProcessor_WSPortBinding'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/Partners/NorthAirWS/NorthAirWS.wsdl#xpointer(/definitions/binding[@name='NorthAirWSPortBinding'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/Partners/WestAir_WS/WestAir_WS.wsdl#xpointer(/definitions/binding[@name='WestAir_WSPortBinding'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/Partners/WestAir_WSService/WestAir_WS.wsdl#xpointer(/definitions/binding[@name='WestAir_WSPortBinding'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/ProcessReservation.wsdl#xpointer(/definitions/binding[@name='ProcessReservationBinding'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/SendItinerary.wsdl#xpointer(/definitions/binding[@name='SendItineraryBinding'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/StoreItinerary.wsdl#xpointer(/definitions/binding[@name='StoreItineraryBinding'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/UploadItinerary.wsdl#xpointer(/definitions/binding[@name='UploadItineraryBinding'])" xlink:type="simple"/>
+    </bindings>
+    <services>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/Itinerary_SA.wsdl#xpointer(/definitions/service[@name='service'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/MailResponder.wsdl#xpointer(/definitions/service[@name='MailResponderService'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/Partners/AAPreProcessor_WS/AAPreProcessor_WS.wsdl#xpointer(/definitions/service[@name='AAPreProcessor_WSService'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/Partners/NorthAirWS/NorthAirWS.wsdl#xpointer(/definitions/service[@name='NorthAirWSService'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/Partners/WestAir_WS/WestAir_WS.wsdl#xpointer(/definitions/service[@name='WestAir_WSService'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/Partners/WestAir_WSService/WestAir_WS.wsdl#xpointer(/definitions/service[@name='WestAir_WSService'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/ProcessReservation.wsdl#xpointer(/definitions/service[@name='ProcessReservationService'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/SendItinerary.wsdl#xpointer(/definitions/service[@name='SendItineraryService'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/StoreItinerary.wsdl#xpointer(/definitions/service[@name='StoreItineraryService'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/ReservationBPEL/UploadItinerary.wsdl#xpointer(/definitions/service[@name='UploadItineraryService'])" xlink:type="simple"/>
+    </services>
+    <regions>
+        <region name="WSDL Endpoints" width="150"/>
+        <region name="JBI Modules" width="500"/>
+        <region name="External Modules" width="200"/>
+    </regions>
+</casa>

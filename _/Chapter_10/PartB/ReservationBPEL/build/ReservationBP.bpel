@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<process
+    name="ReservationBP"
+    targetNamespace="http://enterprise.netbeans.org/bpel/ReservationBPEL/ReservationBP"
+    xmlns="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:tns="http://enterprise.netbeans.org/bpel/ReservationBPEL/ReservationBP" xmlns:ns1="http://enterprise.netbeans.org/bpel/NorthAirWSWrapper" xmlns:ns2="http://j2ee.netbeans.org/wsdl/ProcessReservation" xmlns:ns3="http://northair.airalliance.org/" xmlns:ns0="http://j2ee.netbeans.org/xsd/tableSchema">
+    <import namespace="http://enterprise.netbeans.org/bpel/NorthAirWSWrapper" location="Partners/NorthAirWS/NorthAirWSWrapper.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
+    <import namespace="http://northair.airalliance.org/" location="Partners/NorthAirWS/NorthAirWS.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
+    <import namespace="http://j2ee.netbeans.org/wsdl/ProcessReservation" location="ProcessReservation.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
+    <import namespace="http://j2ee.netbeans.org/wsdl/Itinerary_SA" location="Itinerary_SA.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
+    <partnerLinks>
+        <partnerLink name="UpdateSA_DB" xmlns:tns="http://j2ee.netbeans.org/wsdl/Itinerary_SA" partnerLinkType="tns:jdbcpartner" partnerRole="jdbcPortTypeRole"/>
+        <partnerLink name="ProcessReservation_PL" partnerLinkType="ns2:ProcessReservation" myRole="ProcessReservationPortTypeRole"/>
+        <partnerLink name="NorthAirWS_PL" partnerLinkType="ns1:NorthAirWSLinkType" partnerRole="NorthAirWSRole"/>
+    </partnerLinks>
+    <variables>
+        <variable name="InsertOut" xmlns:tns="http://j2ee.netbeans.org/wsdl/Itinerary_SA" messageType="tns:insertRetMsg"/>
+        <variable name="InsertIn" xmlns:tns="http://j2ee.netbeans.org/wsdl/Itinerary_SA" messageType="tns:inputMsg"/>
+        <variable name="ProcessReservationOperationOut" messageType="ns2:ProcessReservationOperationReply"/>
+        <variable name="ProcessItineraryOut" messageType="ns3:processItineraryResponse"/>
+        <variable name="ProcessItineraryIn" messageType="ns3:processItinerary"/>
+        <variable name="ProcessReservationOperationIn" messageType="ns2:ProcessReservationOperationRequest"/>
+    </variables>
+    <sequence>
+        <receive name="Receive" createInstance="yes" partnerLink="ProcessReservation_PL" operation="ProcessReservationOperation" portType="ns2:ProcessReservationPortType" variable="ProcessReservationOperationIn"/>
+        <assign name="Assign1">
+            <copy>
+                <from>$ProcessReservationOperationIn.inputItinerary/firstName</from>
+                <to>$ProcessItineraryIn.parameters/firstName</to>
+            </copy>
+            <copy>
+                <from>$ProcessReservationOperationIn.inputItinerary/lastName</from>
+                <to>$ProcessItineraryIn.parameters/lastName</to>
+            </copy>
+            <copy>
+                <from>$ProcessReservationOperationIn.inputItinerary/source</from>
+                <to>$ProcessItineraryIn.parameters/source</to>
+            </copy>
+            <copy>
+                <from>$ProcessReservationOperationIn.inputItinerary/destination</from>
+                <to>$ProcessItineraryIn.parameters/destination</to>
+            </copy>
+            <copy>
+                <from>$ProcessReservationOperationIn.inputItinerary/travelDate</from>
+                <to>$ProcessItineraryIn.parameters/travelDate</to>
+            </copy>
+            <copy>
+                <from>$ProcessReservationOperationIn.inputItinerary/seatPreference</from>
+                <to>$ProcessItineraryIn.parameters/seatPreference</to>
+            </copy>
+            <copy>
+                <from>$ProcessReservationOperationIn.inputItinerary/foodPreference</from>
+                <to>$ProcessItineraryIn.parameters/foodPreference</to>
+            </copy>
+            <copy>
+                <from>$ProcessReservationOperationIn.inputItinerary/guestID</from>
+                <to>$ProcessItineraryIn.parameters/guestID</to>
+            </copy>
+            <copy>
+                <from>$ProcessReservationOperationIn.inputItinerary/seqID</from>
+                <to>$ProcessItineraryIn.parameters/seqID</to>
+            </copy>
+            <copy>
+                <from>$ProcessReservationOperationIn.inputItinerary/firstName</from>
+                <to>$InsertIn.part/ns0:FIRSTNAME</to>
+            </copy>
+            <copy>
+                <from>$ProcessReservationOperationIn.inputItinerary/lastName</from>
+                <to>$InsertIn.part/ns0:LASTNAME</to>
+            </copy>
+            <copy>
+                <from>$ProcessReservationOperationIn.inputItinerary/source</from>
+                <to>$InsertIn.part/ns0:SOURCE</to>
+            </copy>
+            <copy>
+                <from>$ProcessReservationOperationIn.inputItinerary/destination</from>
+                <to>$InsertIn.part/ns0:DESTINATION</to>
+            </copy>
+            <copy>
+                <from>$ProcessReservationOperationIn.inputItinerary/travelDate</from>
+                <to>$InsertIn.part/ns0:TRAVELDATE</to>
+            </copy>
+            <copy>
+                <from>$ProcessReservationOperationIn.inputItinerary/seatPreference</from>
+                <to>$InsertIn.part/ns0:SEATPREFERENCE</to>
+            </copy>
+            <copy>
+                <from>$ProcessReservationOperationIn.inputItinerary/foodPreference</from>
+                <to>$InsertIn.part/ns0:FOODPREFERENCE</to>
+            </copy>
+            <copy>
+                <from>$ProcessReservationOperationIn.inputItinerary/guestID</from>
+                <to>$InsertIn.part/ns0:GUESTID</to>
+            </copy>
+            <copy>
+                <from>$ProcessReservationOperationIn.inputItinerary/seqID</from>
+                <to>$InsertIn.part/ns0:SEQID</to>
+            </copy>
+        </assign>
+        <invoke name="InvokeNA" partnerLink="NorthAirWS_PL" operation="processItinerary" portType="ns3:NorthAirWS" inputVariable="ProcessItineraryIn" outputVariable="ProcessItineraryOut"/>
+        <invoke name="InvokeSA" partnerLink="UpdateSA_DB" operation="insert" xmlns:tns="http://j2ee.netbeans.org/wsdl/Itinerary_SA" portType="tns:jdbcPortType" inputVariable="InsertIn" outputVariable="InsertOut"/>
+        <assign name="Assign2">
+            <copy>
+                <from>$ProcessItineraryOut.parameters/return</from>
+                <to>$ProcessReservationOperationOut.outputItinerary/return</to>
+            </copy>
+        </assign>
+        <reply name="Reply" partnerLink="ProcessReservation_PL" operation="ProcessReservationOperation" portType="ns2:ProcessReservationPortType" variable="ProcessReservationOperationOut"/>
+    </sequence>
+</process>

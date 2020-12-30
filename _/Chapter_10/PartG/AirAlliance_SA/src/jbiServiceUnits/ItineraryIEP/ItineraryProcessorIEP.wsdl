@@ -1,0 +1,89 @@
+<definitions targetNamespace="ItineraryProcessorIEP_iep"
+             xmlns:tns="ItineraryProcessorIEP_iep"
+             xmlns:typens="ItineraryProcessorIEP_iep"
+             xmlns:defns="ItineraryProcessorIEP_iep"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:file="http://schemas.sun.com/jbi/wsdl-extensions/file/"
+             xmlns="http://schemas.xmlsoap.org/wsdl/">
+<types>
+    <xsd:schema targetNamespace="ItineraryProcessorIEP_iep" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <xsd:element name="ItineraryStream_MsgObj">
+            <xsd:complexType>
+                <xsd:sequence>
+                    <xsd:element name="GuestID" type="xsd:string"/>
+                    <xsd:element name="FirstName" type="xsd:string"/>
+                    <xsd:element name="LastName" type="xsd:string"/>
+                    <xsd:element name="SeqID" type="xsd:int"/>
+                    <xsd:element name="Source" type="xsd:string"/>
+                    <xsd:element name="Destination" type="xsd:string"/>
+                    <xsd:element name="FoodPreference" type="xsd:string"/>
+                    <xsd:element name="SeatPreference" type="xsd:string"/>
+                </xsd:sequence>
+            </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="ItineraryStreamBatch_MsgObj">
+            <xsd:complexType>
+                <xsd:sequence>
+                    <xsd:element name="ItineraryStream_MsgObj" minOccurs="0" maxOccurs="unbounded">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                    <xsd:element name="GuestID" type="xsd:string"/>
+                    <xsd:element name="FirstName" type="xsd:string"/>
+                    <xsd:element name="LastName" type="xsd:string"/>
+                    <xsd:element name="SeqID" type="xsd:int"/>
+                    <xsd:element name="Source" type="xsd:string"/>
+                    <xsd:element name="Destination" type="xsd:string"/>
+                    <xsd:element name="FoodPreference" type="xsd:string"/>
+                    <xsd:element name="SeatPreference" type="xsd:string"/>
+                            </xsd:sequence>
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+</types>
+
+<message name="ItineraryStream_Msg">
+    <part name="input" element="typens:ItineraryStream_MsgObj"/>
+</message>
+<message name="ItineraryStreamBatch_Msg">
+    <part name="input" element="typens:ItineraryStreamBatch_MsgObj"/>
+</message>
+
+<portType name="InputPt">
+    <operation name="ItineraryStream">
+        <input message="tns:ItineraryStream_Msg"/>
+    </operation>
+    <operation name="ItineraryStreamBatch">
+        <input message="tns:ItineraryStreamBatch_Msg"/>
+    </operation>
+</portType>
+
+<plnk:partnerLinkType name="InputPlt" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype">
+    <plnk:role name = "InputRn" portType="tns:InputPt"/>
+</plnk:partnerLinkType>
+<!-- input binding -->
+<binding name="InputBinding" type="defns:InputPt">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="ItineraryStream">
+        <soap:operation soapAction="ItineraryStream"/>
+        <input>
+            <soap:body use="literal"/>
+        </input>
+    </operation>
+    <operation name="ItineraryStreamBatch">
+        <soap:operation soapAction="ItineraryStreamBatch"/>
+        <input>
+            <soap:body use="literal"/>
+        </input>
+    </operation>
+</binding>
+<!-- input service -->
+<service name="InputService">
+    <port name="InputPort" binding="tns:InputBinding">
+        <soap:address location="http://localhost:12100/service/ItineraryProcessorIEP_iep"/>
+    </port>
+</service>
+</definitions>

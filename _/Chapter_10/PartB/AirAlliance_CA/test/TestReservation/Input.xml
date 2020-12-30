@@ -1,0 +1,23 @@
+<soapenv:Envelope xsi:schemaLocation="http://schemas.xmlsoap.org/soap/envelope/ http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:nor="http://northair.airalliance.org/">
+  <soapenv:Body>
+    <nor:processItinerary>
+      <!--Optional:-->
+      <firstName>Frank</firstName>
+      <!--Optional:-->
+      <lastName>Jennings</lastName>
+      <!--Optional:-->
+      <source>BLR</source>
+      <!--Optional:-->
+      <destination>SFO</destination>
+      <!--Optional:-->
+      <travelDate>2007-10-11</travelDate>
+      <!--Optional:-->
+      <seatPreference>Win</seatPreference>
+      <!--Optional:-->
+      <foodPreference>Veg</foodPreference>
+      <!--Optional:-->
+      <guestID>g123</guestID>
+      <seqID>123</seqID>
+    </nor:processItinerary>
+  </soapenv:Body>
+</soapenv:Envelope>

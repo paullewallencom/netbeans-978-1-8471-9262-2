@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="UploadItinerary" targetNamespace="http://j2ee.netbeans.org/wsdl/UploadItinerary"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://j2ee.netbeans.org/wsdl/UploadItinerary" xmlns:ns="http://j2ee.netbeans.org/xsd/tableSchema" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:ftp="http://schemas.sun.com/jbi/wsdl-extensions/ftp/">
+    <types>
+        <xsd:schema targetNamespace="http://j2ee.netbeans.org/wsdl/UploadItinerary">
+            <xsd:import namespace="http://j2ee.netbeans.org/xsd/tableSchema" schemaLocation="ITINERARY.xsd"/>
+        </xsd:schema>
+    </types>
+    <message name="UploadItineraryOperationRequest">
+        <part name="inputItinerary" element="ns:ITINERARY"/>
+    </message>
+    <portType name="UploadItineraryPortType">
+        <operation name="UploadItineraryOperation">
+            <input name="input1" message="tns:UploadItineraryOperationRequest"/>
+        </operation>
+    </portType>
+    <binding name="UploadItineraryBinding" type="tns:UploadItineraryPortType">
+        <ftp:binding/>
+        <operation name="UploadItineraryOperation">
+            <ftp:operation/>
+            <input name="input1">
+                <ftp:message messageName="" messageNamePrefixIB="" messageNamePrefixOB="" pollIntervalMillis="5000" archive="true" protect="true" stage="true" use="literal" encodingStyle="" messageCorrelate="true" messageRepository="aapartner\itinerary"/>
+            </input>
+        </operation>
+    </binding>
+    <service name="UploadItineraryService">
+        <port name="UploadItineraryPort" binding="tns:UploadItineraryBinding">
+            <ftp:address url="ftp://aapartner:aapartner@localhost:21" dirListStyle="UNIX" useUserDefinedHeuristics="false" userDefDirListStyle="" userDefDirListHeuristics="" mode="BINARY" cmdChannelTimeout="45000" dataChannelTimeout="45000"/>
+        </port>
+    </service>
+    <plnk:partnerLinkType name="UploadItinerary1">
+        <!-- A partner link type is automatically generated when a new port type is added. Partner link types are used by BPEL processes. 
+In a BPEL process, a partner link represents the interaction between the BPEL process and a partner service. Each partner link is associated with a partner link type.
+A partner link type characterizes the conversational relationship between two services. The partner link type can have one or two roles.-->
+        <plnk:role name="UploadItineraryPortTypeRole" portType="tns:UploadItineraryPortType"/>
+    </plnk:partnerLinkType>
+</definitions>

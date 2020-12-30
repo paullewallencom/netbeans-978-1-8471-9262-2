@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jbi xmlns="http://java.sun.com/xml/ns/jbi" xmlns:ns1="http://enterprise.netbeans.org/bpel/ReservationBPEL/ReservationBP" xmlns:ns2="http://j2ee.netbeans.org/wsdl/Itinerary_SA" xmlns:ns3="http://j2ee.netbeans.org/wsdl/MailResponder" xmlns:ns4="http://j2ee.netbeans.org/wsdl/ProcessReservation" xmlns:ns5="http://westair.airalliance.org/" xmlns:ns6="http://northair.airalliance.org/" xmlns:ns7="http://airalliance.org/" version="1.0">
+    <service-assembly>
+        <identification>
+            <name>AirAlliance_SA</name>
+            <description>Represents the Service Assembly of AirAlliance_SA</description>
+        </identification>
+        <connections>
+            <connection>
+                <consumer endpoint-name="jdbcPortTypeRole_partnerRole" service-name="ns1:UpdateSA_DB"/>
+                <provider endpoint-name="port" service-name="ns2:service"/>
+            </connection>
+            <connection>
+                <consumer endpoint-name="MailResponderPortTypeRole_partnerRole" service-name="ns1:MailResponder_PL"/>
+                <provider endpoint-name="MailResponderPort" service-name="ns3:MailResponderService"/>
+            </connection>
+            <connection>
+                <consumer endpoint-name="ProcessReservationPort" service-name="ns4:ProcessReservationService"/>
+                <provider endpoint-name="ProcessReservationPortTypeRole_myRole" service-name="ns1:ProcessReservation_PL"/>
+            </connection>
+            <connection>
+                <consumer endpoint-name="WestAir_WSRole_partnerRole" service-name="ns1:WestAir_PL"/>
+                <provider endpoint-name="WestAir_WSPort" service-name="ns5:WestAir_WSService"/>
+            </connection>
+            <connection>
+                <consumer endpoint-name="NorthAirWSRole_partnerRole" service-name="ns1:NorthAirWS_PL"/>
+                <provider endpoint-name="NorthAirWSPort" service-name="ns6:NorthAirWSService"/>
+            </connection>
+            <connection>
+                <consumer endpoint-name="AAPreProcessor_WSRole_partnerRole" service-name="ns1:PreProcessor"/>
+                <provider endpoint-name="AAPreProcessor_WSPort" service-name="ns7:AAPreProcessor_WSService"/>
+            </connection>
+        </connections>
+    </service-assembly>
+</jbi>

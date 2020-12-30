@@ -1,0 +1,11 @@
+<ITINERARY xmlns="http://j2ee.netbeans.org/xsd/tableSchema">
+<ns0:SEQID xmlns:msgns="http://j2ee.netbeans.org/wsdl/ProcessReservation" xmlns:ns0="http://j2ee.netbeans.org/xsd/tableSchema">24</ns0:SEQID>
+<ns0:FIRSTNAME xmlns:msgns="http://j2ee.netbeans.org/wsdl/ProcessReservation" xmlns:ns0="http://j2ee.netbeans.org/xsd/tableSchema">Osbert3</ns0:FIRSTNAME>
+<ns0:FOODPREFERENCE xmlns:msgns="http://j2ee.netbeans.org/wsdl/ProcessReservation" xmlns:ns0="http://j2ee.netbeans.org/xsd/tableSchema">Veg</ns0:FOODPREFERENCE>
+<ns0:SOURCE xmlns:msgns="http://j2ee.netbeans.org/wsdl/ProcessReservation" xmlns:ns0="http://j2ee.netbeans.org/xsd/tableSchema">BLR</ns0:SOURCE>
+<ns0:GUESTID xmlns:msgns="http://j2ee.netbeans.org/wsdl/ProcessReservation" xmlns:ns0="http://j2ee.netbeans.org/xsd/tableSchema">z008</ns0:GUESTID>
+<ns0:SEATPREFERENCE xmlns:msgns="http://j2ee.netbeans.org/wsdl/ProcessReservation" xmlns:ns0="http://j2ee.netbeans.org/xsd/tableSchema">Win</ns0:SEATPREFERENCE>
+<ns0:DESTINATION xmlns:msgns="http://j2ee.netbeans.org/wsdl/ProcessReservation" xmlns:ns0="http://j2ee.netbeans.org/xsd/tableSchema">MAS</ns0:DESTINATION>
+<ns0:TRAVELDATE xmlns:msgns="http://j2ee.netbeans.org/wsdl/ProcessReservation" xmlns:ns0="http://j2ee.netbeans.org/xsd/tableSchema">2009-04-07</ns0:TRAVELDATE>
+<ns0:LASTNAME xmlns:msgns="http://j2ee.netbeans.org/wsdl/ProcessReservation" xmlns:ns0="http://j2ee.netbeans.org/xsd/tableSchema">Abel2</ns0:LASTNAME>
+</ITINERARY>
